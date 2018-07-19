@@ -4,8 +4,9 @@
 
   <% @artist.songs.each do |song| %>
     <label>Song:</label> <a href="/songs/<%= song.slug %>"><%= song.name %></a>
-    <ul>
-      <% @song.genres.each do |genre| %>
-        <li><a href="/genres/<%= genre.slug %>"><%= genre.name %></a></li>
-    </ul>
+      <label>Genre(s):</label>
+      <ul>
+        <% @song.genres.each do |genre| %>
+          <li><a href="/genres/<%= genre.slug %>"><%= genre.name %></a></li>
+      </ul>
   <% end %>
