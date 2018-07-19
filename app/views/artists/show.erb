@@ -7,11 +7,10 @@
   <label>Song Name: <a href="/songs/<%= song.slug %>"><%= song.name %></a></label>
 
 
-    <label>Genre(s):</label>
-    <ul>
-      <% song.genres.each do |genre| %>
-        <li><a href="/genres/<%= genre.slug %>"><%= genre.name %></a></li>
-        <% end %>
-      </ul>
-
+  <label>Genre(s):</label>
+  <ul>
+    <% song.genres.each do |genre| %>
+      <li><a href="/genres/<%= genre.slug %>"><%= genre.name %></a></li>
+    <% end %>
+  </ul>
 <% end %> 
